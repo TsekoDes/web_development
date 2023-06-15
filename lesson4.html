@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>CSS Integration, Colors, Units, and Dimensions</title>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type = "text/css" href = "lesson_4.css">
+    </head>
+    <body>
+        <h1>CSS Integration, Colors, Units, and Dimensions</h1>
+        <div id = "first_div" class = "div_resl">First Div</div>
+        <div id = "test_dimensions" class = "div_resl margin_top">Content here</div>
+        <div id = "last_div" class = "div_resl margin_top">Last div</div>
+        <div id = "sticky_div" class = "box_sizing margin_top">A div out of nowhere - The one meant to be sticky</div>
+        <div class = "restrict box_sizing margin_top">
+            This is a text inside a div. It has a limited width. The maximum width is 200px. 
+            The minimum height is 150px. The height will increase since no maximum height is set.
+        </div>
+        <div class = "restrict box_sizing margin_top">
+            The maximum width of this div is 200px. The minimum height is 150px.
+        </div>
+
+        <h2>CSS Position</h2>
+        <div id = "restrict2" class = "box_sizing margin_top">
+            The maximum width is 200px. The maximum height is 200px. Now we will type until the 
+            text exceeds the maximum height of the div. Let us go and check if the maximum has been reached. 
+        </div>
+        <div class = "parent box_sizing margin_top">
+            I am a parent and I have a limited width of 600px.
+        </div>
+        <div class = "child box_sizing margin_top">
+            I am a relative child
+        </div>
+        <div id = "fixed_div" class = "box_sizing margin_top">
+            I am a fixed div
+        </div>
+        <div class = "new_relative box_sizing margin_top">
+            A new relative div
+            <div id = "absolute_div" class = "box_sizing margin_top">
+                I am an absolute div
+            </div>
+        </div>
+        <h2>CSS Display</h2>
+        <h3>Display set to none</h3>
+        <p id = "hide">This is a paragraph. We are going to set its display attribute to none</p>
+        <h3>Display set to inline</h3>
+        <div>
+            This is a div. It has an inline parapraph. <p id = "p1" class = "paragr">This is the paragraph.</p> 
+            It is great about learning all this stuff.
+        </div>
+
+        <h3>Display set to block</h3>
+        <div>
+            This is a div. It has an inline parapraph. <p  id = "p2" class = "paragr">This is the paragraph.</p> 
+            It is great about learning all this stuff.
+        </div>
+        <h3>Display set to inline-block</h3>
+        <div>
+            This is a div. It has an inline parapraph. <p id = "p3" class = "paragr">This is the paragraph.</p> 
+            It is great about learning all this stuff.
+        </div>
+
+    </body>
+</html>

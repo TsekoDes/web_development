@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>CSS Selectors and Specificity Hierarchy</title>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+        <link rel = "stylesheet" type = "text/css" href = "lesson5.css">
+    </head>
+    <body>
+        <h1>CSS Selectors and Specificity Hierarchy</h1>
+        <h2>CSS Selectors</h2>
+        <ul>
+            <li>Tag Selectors</li>
+            <li>ID Selectors</li>
+            <li>Class Selectors</li>
+            <li>All Selectors</li>
+        </ul>
+        <h3>Examples Below</h3>
+        <table>
+            <tr>
+                <th colspan = "2">Top 5 Marvel Movies &#40;by fan&#41;</th>
+            </tr>
+            <tr>
+                <th>Position</th>
+                <th>Name</th>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Iron Man</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Avengers: Age of Ultron</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Thor: Ragnarok</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Avengers: Endgame</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Avengers: Infinity War</td>
+            </tr>
+        </table>
+        <div id = "id_selector">We used an ID Selector for this div</div>
+        <div class = "pink_div">I am a div in a pink color class</div>
+        <div class = "pink_div">I am another div in a pink color class</div>
+        <h3>Combinatory Selector example here</h3>
+        <p class = "bold">I am bold</p>
+        <p class = "italic">I am italic</p>
+        <div class = "bold italic">I am both bold and italic. There is nothing wrong with me.</div>
+        <span>
+            <div>A div inside a span</div>
+            <div>Another div inside a span</div>
+        </span>
+        <div class = "link_after">Styling Link 1</div>
+        <a href = "">The first link</a>
+        <div class = "link_after">Styling link 2</div>
+        <a href = "">The first link</a><br>
+        <form>
+            <label>Name: </label>
+            <input type = "text" name = "focused_input">
+            <input type = "submit" value = "Submit">
+        </form>
+        <h2>Specificity Hierarchy below</h2>
+        <ol type ="1" start="1">
+            <li>Inline Styles</li>
+            <li>IDs</li>
+            <li>Classes, Pseudo-classes, attributes</li>
+            <li>Elements, Pseudo-elements</li>
+        </ol>
+    </body>
+</html>

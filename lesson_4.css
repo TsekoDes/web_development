@@ -1,0 +1,139 @@
+.div_resl {
+    width: 8%;
+    height: 50px;
+    margin-left: 10px;
+}
+
+#first_div {
+    color: blue;
+    border: 5px solid blue;
+    /*position: fixed;*/
+}
+
+#test_dimensions {
+    color: red;
+    border: 5px solid red;
+    /*position: fixed;*/
+}
+
+#last_div {
+    color: orange;
+    border: 5px solid orange;
+}
+
+.restrict {
+    /*min-width: 50px;*/
+    min-height: 100px;
+    max-width: 200px;
+    /*max-height: 50px;*/
+    background-color: purple;
+    color: white;
+    border: 5px solid black;
+}
+
+#restrict2 {
+    max-height: 200px;
+    max-width: 200px;
+    background-color: green;
+    color: black;
+    padding: 20px; /*Padding gives the div height. If it was not there and the div is empty, then the height is 0px.*/
+    border: 5px solid black;
+    /*border-radius: 40px 20px 20px 10px;*/
+    position: static;
+    /* This is the default position. It will flow with the page */
+}
+
+.box_sizing {
+    box-sizing: border-box;
+    /*
+        This css helps prevent the div element from increasing in 
+        size when padding is added to the element.
+    */
+}
+
+.parent {
+    max-width: 600px;
+    background-color: black;
+    height: 50px;
+}
+
+.margin_top {
+    margin-top: 20px;
+    color: white;
+}
+
+.child {
+    height: 50px;
+    width: 100px;
+    background-color: yellow;
+    position: relative;
+    bottom: 70px;
+    left: 450px;
+    padding-left: 5px;
+}
+
+#fixed_div {
+    border: 5px solid grey;
+    background-color: pink;
+    color: Blue;
+    height: 100px;
+    width: 100px;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+}
+
+.new_relative {
+    height: 100px;
+    width: 200px;
+    background-color: white;
+    border: 5px solid black;
+    position: relative;
+    color: black;
+}
+
+#absolute_div {
+    height: 50px;
+    width: 100px;
+    color: black;
+    background-color: purple;
+    border: 5px solid black;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+#sticky_div {
+    height: 30px;
+    width: 500px;
+    background-color:chartreuse;
+    color: black;
+    border: 2px solid black;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 50px;
+}
+
+#hide {
+    display: none;
+}
+
+.paragr {
+    color: white;
+    background-color: blue;
+    height: 30px;
+    width: 150px;
+    margin: 5px;
+}
+
+#p1 {
+    display: inline;
+}
+
+#p2 {
+    display: block;
+}
+
+#p3 {
+    display: inline-block;
+}
