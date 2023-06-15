@@ -1,2 +1,2 @@
 # web_development
-Everything that is related to web development is added here. Coding projects to be added soon
+This is the main branch. To access other branches, click on main, then choose the branch you want to view
