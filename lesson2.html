@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Lesson 2 of HTML</title>
+        <meta charset="UTF-8">
+        <meta name = "description" content="Purpose of page">
+        <meta name="keywords" content = "advanced html, progressing">
+        <meta name = "author" content = "Name Surname">
+        <meta name = "viewport" content = "width = device-width, initial-scale= 1.0">
+        <!--<meta http-equiv="refresh" content = "60; url = lesson1.html">-->
+    </head>
+    <body>
+        <!--
+            A typical structure of a page is as follows:
+                - Header, made up of a logo, title, etc.
+                - Navigation, Made up with links to other pages.
+                - Body, The content that makes up your website.
+                - Footer, which can contain the copyright, Terms and conditions, etc.
+        -->
+        <div id = "pageNav">
+            <a href = "lesson1.html">Lesson 1</a>
+            <!--
+                This is a link. it can be used to navigate to a page locally or a source on the interet.
+                The href attribute specifies the page to go to when the link is clicked.
+            -->
+            <a href = "lesson2.html">Lesson2</a>
+        </div>
+        <img src = "../images/new_logo.png" alt = "logo" height = "100" width = "200">
+        <h1>Markup Buddies</h1>
+
+        <!--
+            HTML attributes.
+            Elements can have an id attribute.
+                -This makes an element different from all the other elements.
+                -an ID attribute is unique.
+                -So you must avoid having two elements of the same ID.
+                -It defeats the purpose of making the element unique.
+            Elements can have a class attribute.
+                -Multiple students can be in the same class, and a single student can be enrolled in multiple classess.
+                -Same goes for elements. A group of elements can be in the same class, and one element can have multiple classes.
+            An id and a class (or classes) can be used by javascript to manipulate the document object model.
+        -->
+        <div id = "red_font" class = "green_background">My font color is red, and my background color is green</div>
+        <div id = "white_font" class = "green_background">My font color is white, and my background color is green</div>
+        <div id = "yellow_font" class = "green_background bold">My font color is yellow, my background color is green, and I am bold</div><br><br>
+        <h3>5 Famous Footballers you Know</h3>
+        <ol type = "1" start = "2">
+            <!--
+                -An ordered list.
+                -This specific list is numbered.
+                -It can be digits, alphabets, roman figures, etc.
+                -You can specify this using the type attribute.
+                The start attribute specifies on which digit or letter or roman figure to start at.
+            -->
+            <li>Lionel Messi</li>
+            <li>Cristiano Ronaldo</li>
+            <li>Frank Ribery</li>
+            <li>Kevin de Bruyne</li>
+            <li>Sadio Mane</li>
+        </ol>
+        <h3>4 favorite fruits</h3>
+        <ul type = "square">
+            <!--
+                -This is an unordered list.
+                -It is not numbered.
+                -It has a type attribute. It can be a disc, square, or circle.
+            -->
+            <li>Banana</li>
+            <li>Apple</li>
+            <li>Pear</li>
+            <li>Orange</li>
+        </ul>
+        <h3>Now showing lesson1 inside lesson 2</h3>
+        <iframe src = "lesson1.html" height = "500" width = "700"></iframe><br>
+        <h3>Register to our Website Form</h3>
+        <form action="under_construction.html" method = "post">
+            Name: <input type = "text" name = "fname"><br>
+            Surname: <input type = "text" name = "lname"><br>
+            Email: <input type = "email" name = "email"><br>
+            Password: <input type = "password" name = "pass"><br>
+            Confirm Password: <input type = "password" name = "confPass"><br>
+            <input type = "submit" value = "Register">
+        </form>
+        <!--<h3 style = "color: red;">Don't forget to configure apache for CORS</h3>-->
+        <h3>HTML Inputs</h3>
+        <ul type = "circle">
+            <li><h4>3 types of buttons</h4></li>
+            <ul type = "square">
+                <li>A normal button</li>
+                <button type = "button">Submit</button>
+                <li>A button used to submit the contents of a form</li>
+                <input type = "submit" value = "Submit">
+                <li>A button that is represented by an image</li>
+                <input type = "image" src = "../images/submit.jpeg" width = "100" height = "auto">
+            </ul>
+            <li><h4>HTML text inputs</h4></li>
+            <ul type = "square">
+                <li>An input field that accepts text</li>
+                <input type = "text" name = "username">
+                <li>An input field with an obfuscated password</li>
+                <input type = "password" name = "pass">
+                <li>An input field meant for paragraphs</li>
+                <textarea rows = "4" cols = "50"></textarea>
+            </ul>
+            <li><h4>HTML Hidden Input</h4></li>
+            <ul type = "square">
+                <li>An input field that is hidden to the user and used to add control data submitted to the server</li>
+                <input type = "hidden" name = "hiddenvalues">
+            </ul>
+            <li><h4>HTML Check Boxes Input</h4></li>
+            <ul type = "square">
+                <li>A box that you can check when you want to select an option.</li>
+                <li>Multiple boxes can  be checked at one time. Technical skills example below:</li>
+                <input type = "checkbox" name = "frontEnd" value = "frontEnd">Web Development<br>
+                <input type = "checkbox" name = "cplusplus" value = "cplusplus">C++<br>
+                <input type = "checkbox" name = "java" value = "java">Java<br>
+            </ul>
+            <li><h4>HTML Radio Buttons Input</h4></li>
+            <ul type = "square">
+                <li>Similar to check boxes, but only a single option can be selected here.</li>
+                <li>Here the name attribute here shows the group that the buttons belong to </li>
+                <li>An example of an employment status: </li>
+                <input type = "radio" name = "emp_status" value = "student">Student<br>
+                <input type = "radio" name = "emp_status" value = "employed">Employeed<br>
+                <input type = "radio" name = "emp_status" value = "unemployed">Unemployed<br>
+            </ul>
+            <li><h4>HTML Files Input</h4></li>
+            <ul type = "square">
+                <li>Allows the user to input a file &#40;images, videos, etc&#41; to the website.</li>
+                <li>This file can then be uploaded to the server as per the developer's wish.</li>
+                <li>The accept attribute will be used to restrict the user to upload specific files only.</li>
+                <li>An example of uploading an image: </li>
+                <input type = "file" name = "face_pic" accept = ".jpg, .jpeg, .png">
+            </ul>
+        </ul>
+        <footer>
+            <small>Copyright &copy; 2023 Markup Buddies. All Rights Reserved</small>
+        </footer>
+    </body>
+</html>

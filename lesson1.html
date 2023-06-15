@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <!--
+        This is an example of an html comment.
+        It is also a multiline comment.
+    -->
+    <!--    
+        An html document can have only one root element.
+        The root element only has two children, which are head and body.
+        An HTML page can exist with one or both of these children.
+    -->
+    <head>
+        <!--
+            Here you can add the page title, necessary scripts, important 
+            metadata about the page, and the necessary stylesheets.
+            All the content that makes the head will not be displayed on the
+            website.
+            The title will only be shown as the tab name.
+        -->
+        <title>HTML Lesson 1</title>
+        <meta charset = "UTF-8">
+        <meta name = "description" content = "The purpose of the page">
+        <meta name = "keywords" content = "COS216, COS 216, Crash Course">
+        <meta name = "author" content = "Name Surname">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+        <meta http-equiv = "refresh" content = "60; url=lesson1_redirect_page.html">
+    </head>
+    <body>
+        <!--
+            The content that is shown to the viewer or browser on the 
+            website goes here.
+        -->
+        Welcome to Lesson 1 of HTML!<br>
+        Click <a href = "lesson1_redirect_page.html">here</a> if you are not redirected in 1 minute.....<br>
+        <!-- Headings -->
+        <h1>Heading 1 - The biggest</h1>
+        <h2>Heading 2 - Less bigger heading</h2>
+        <h3>Heading 3 - Less than Heading 2</h3>
+        <h4>Heading 4 - Less than Heading 3</h4>
+        <h5>Heading 5 - Less than Heading 4</h5>
+        <h6>Heading 6 - The tiniest of headings</h6>
+        <!-- A paragraph -->
+        <p>My COS 216 paragraph crash course</p>
+        <!-- A div -->
+        <div>div 1</div>
+        <div>div 2... Oh no. we are not on the same line. I guess that is the difference between us spans and divs</div>
+        <!-- A span -->
+        <span>The first span....... </span>
+        <span>Look out..The second span</span>
+        <span>...Another span... On same line</span><br><br>
+        <!-- A table -->
+        <table>
+            <tr><!-- A table row -->
+                <th colspan = "3">Favorite games</th><!-- A table header -->
+            </tr>
+            <tr>
+                <th>Name</th> <!-- Table subheadings, in this case-->
+                <th>Genre</th>
+                <th>Years played</th>
+            </tr>
+            <tr>
+                <td>Fifa 18</td><!-- A table column -->
+                <td>Football</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>Call of Duty</td><!-- A table column -->
+                <td>War RPG</td>
+                <td>1</td>
+            </tr>
+        </table>
+        <br>
+        <span>Above table</span>
+        <span> --- </span>
+        <span>shown differently</span>
+        <br><br>
+        <table>
+            <tr>
+                <th rowspan = "3">Favorite games</th>
+                <th>Name</th>
+                <td>Fifa 18</td>
+                <td>Call of duty</td>
+            </tr>
+            <tr>
+                <th>Genre</th>
+                <td>Football</td>
+                <td>War RPG</td>
+            </tr>
+            <tr>
+                <th>Years played</th>
+                <td>4</td>
+                <td>1</td>
+            </tr>
+        </table>
+        <br>
+        <p>Done with Lesson 1. Click <a href = "lesson2.html">here</a> to go to Lesson 2</p> 
+    </body>
+</html>
